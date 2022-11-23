@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.2rem;
+  grid-template-rows: repeat(2, auto);
+//   max-width: 1000px;
+width: min(100% , 1000px);
+  margin-inline: auto;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  &__main,
+  &__sidebar {
+    padding: 2.2rem;
+  }
+
+  &__main {
+    background: rgb(0, 0, 158);
+  }
+
+  &__sidebar {
+    background: rgb(150, 0, 150);
+  }
+}
